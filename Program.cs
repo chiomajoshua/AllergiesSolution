@@ -6,10 +6,15 @@ namespace AllergiesSolution
     {
         public static void Main(string[] args)
         {
-            var obj = new Allergies("Mark", 82);
-            var otherObj = new Allergies("Dorcas");
-            Console.WriteLine(obj.ToString());
-            Console.WriteLine(otherObj.ToString());
+            var allergy = new Allergies("Mark");
+            Console.WriteLine(allergy.ToString());
+
+            var scoreAllergy = new Allergies("Dorcas", 82);            
+            Console.WriteLine(scoreAllergy.ToString());
+
+            var descriptionAllergy = new Allergies("Dorcas", "Peanuts Chocolate Cats Strawberries");
+            Console.WriteLine(descriptionAllergy.ToString());
+
             Console.ReadKey();
         }
     }

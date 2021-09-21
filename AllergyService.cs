@@ -59,14 +59,14 @@ namespace AllergiesSolution
         public override string ToString()
         {
             var conclusion = string.Empty;
-            if (!string.IsNullOrEmpty(this.Name))
-                conclusion = $"{this.Name} Has No Allergies!";
+            if (!string.IsNullOrEmpty(Name))
+                conclusion = $"{Name} Has No Allergies!";
             
-            if (!string.IsNullOrEmpty(this.Name) && Score > 0)
+            if (!string.IsNullOrEmpty(Name) && Score > 0)
                     conclusion = $"{Name} Is Allergic To {Utilities.GetAllergies(Score)}.";
 
-            if (!string.IsNullOrEmpty(this.Name) && !string.IsNullOrEmpty(Description))
-                conclusion = string.Empty;
+            if (!string.IsNullOrEmpty(Name) && !string.IsNullOrEmpty(Description))
+                conclusion = $"{Name} Is Allergic To {Utilities.OrderAllergies(Description)}.";
 
             return conclusion;
         }

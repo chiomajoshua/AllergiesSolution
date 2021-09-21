@@ -38,7 +38,7 @@ namespace AllergiesSolution
                                     .ToList()
                                     .ConvertAll(d => d.ToLower())
                                     .Any(x => x.Contains(allergen.ToLower()));
-        }
+        }        
 
         public static bool IsAllergicTo(Allergen allergen)
         {
@@ -64,7 +64,16 @@ namespace AllergiesSolution
 
         public static string OrderAllergies(string allergies)
         {
-            return string.Empty;
+            int score = 0;
+            foreach(var allergy in allergies.Split(' '))
+            {
+                if (IsAllergicTo(allergy))
+                {
+                    score += (int)Enum.Parse(typeof(Allergen), allergy);
+                }
+            }
+
+            return GetAllergies(score);
         }
     }
 }
