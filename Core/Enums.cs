@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AllergiesSolution
+namespace AllergiesSolution.Core
 {
     public class Enums
     {

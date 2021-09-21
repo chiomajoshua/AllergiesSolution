@@ -1,7 +1,7 @@
 ﻿using System;
-using static AllergiesSolution.Enums;
+using static AllergiesSolution.Core.Enums;
 
-namespace AllergiesSolution
+namespace AllergiesSolution.Core
 {
     public class Allergies
     {

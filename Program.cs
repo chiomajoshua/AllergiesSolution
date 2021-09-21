@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AllergiesSolution.Core;
+using System;
 
 namespace AllergiesSolution
 {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using static AllergiesSolution.Enums;
+using static AllergiesSolution.Core.Enums;
 
-namespace AllergiesSolution
+namespace AllergiesSolution.Core
 {
     public static class Utilities
     {
